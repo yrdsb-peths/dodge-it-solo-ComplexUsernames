@@ -4,6 +4,6 @@ public class MyWorld extends World {
     public MyWorld() {
         super(600, 400, 1);
         Rocket rocket = new Rocket();
-        addObject(rocket, 300, 300);
+        addObject(rocket, 100, 100);
     }
 }
