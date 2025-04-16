@@ -10,6 +10,13 @@ public class Rock extends Actor
         {
             resetRock();
         }
+        
+        if(isTouching(Rocket.class))
+        {
+            Skull skull = new Skull();
+            getWorld().addObject(skull, 300, 200);
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetRock()
